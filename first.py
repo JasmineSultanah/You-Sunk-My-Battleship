@@ -9,14 +9,14 @@ def print_board(board):
     for row in board:
         print " ".join(row)
 
-print "Let's play Battleship!"
+print "Let's play Battleship! [Press Enter]"
 raw_input("")
-print "Hello Comrade. I have a mission for you."
+print "Hello comrade. I have a mission for you."
 raw_input("")
-print "Here is the ocean."
+print "Here is the ocean (Looking rather rectangular)"
 print_board(board)
 raw_input()
-print "Your task is to find the enemy's battleship and attack it with a bomb. You will win when their battleship is sunk. You have 11 bombs."
+print "Your task is to find the enemy's battleship and attack it with a bomb. You will win once their battleship is sunken. You have 11 bombs."
 raw_input()
 print "Commencing mission..."
 print "Your country depends on you, comrade."
@@ -31,7 +31,7 @@ def random_col(board):
 ship_row = random_row(board)
 ship_col = random_col(board)
 col_or_row = randint(0,1)
-print col_or_row
+
 
 
 if col_or_row == 0 :
