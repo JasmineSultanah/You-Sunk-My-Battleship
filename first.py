@@ -13,13 +13,13 @@ print "Let's play Battleship! [Press Enter]"
 raw_input("")
 print "Hello comrade. I have a mission for you."
 raw_input("")
-print "Here is the ocean (Looking rather rectangular)"
+print "Here is the ocean (very detailed. amazing graphics. wow)"
 print_board(board)
 raw_input()
-print "Your task is to find the enemy's battleship and attack it with a bomb. You will win once their battleship is sunken. You have 11 bombs."
+print "Your task is to find the enemy's battleship and attack it with a bomb. You will win once their battleship has sunken. You have 11 bombs."
 raw_input()
 print "Commencing mission..."
-print "Your country depends on you, comrade."
+print "Your country depends on you."
 
 def random_row(board):
     return randint(0, len(board) - 1)
@@ -53,7 +53,7 @@ if col_or_row == 0 :
             if board[Ship_Row[0]][ship_col] == "H" and board[Ship_Row[1]][ship_col] == "H" and board[Ship_Row[2]][ship_col] =="H" :
                 print
                 print print_board(board)
-                print "Congratulations, Soldier, you've sunk the enemy's battleship!"
+                print "Congratulations, soldier. You've sunken the enemy's battleship!"
                 break
         else:
             if (guess_row-1 < 0 or guess_row-1 > 4) or (guess_col-1 < 0  or guess_col-1 > 4):
